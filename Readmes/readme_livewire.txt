@@ -28,3 +28,6 @@ Crear componente livewire:
 Crear campos y datos falsos;
     php artisan migrate:fresh --seed
 
+Publicar elementos:
+    php artisan vendor:publish --tag=jetstream-views
+
