@@ -10,7 +10,8 @@
 
             <div class="px-6 py-4"> 
                 <input type="text" name="search" id="" wire:model='search'>
-                {{$search}}
+                {{$search}} - 
+                {{$click}} - 
             </div>
 
             @if ($posts->count())
@@ -25,6 +26,9 @@
                             </th>
                             <th scope="col" class="px-6 py-3">
                                 Contenido
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Click
                             </th>
                             <th scope="col" class="px-6 py-3">
                                 Edit
@@ -42,6 +46,11 @@
                                 </td>
                                 <td class="px-6 py-4">
                                     {{$post->content}}
+                                </td>
+                                <td class="px-6 py-4">
+                                    <button wire:click="click({{$post->id}})";>
+                                        ID
+                                    </button>
                                 </td>
                                 <td class="px-6 py-4">
                                     :-)

@@ -8,10 +8,17 @@ use App\Models\Post;
 class ShowPosts extends Component
 {
 
-    public $search = 'Esto es lo que se buscara';
+    public $search = '';
+    public $click = '';
+
     public function render()
     {
         $posts = Post::where('title', 'like', '%' . $this->search . '%')->get();
         return view('livewire.show-posts', compact('posts'));
     }
+
+    public function click($recibir){
+        $this->click = 'Dio click: ' . $recibir;
+    }
+
 }
