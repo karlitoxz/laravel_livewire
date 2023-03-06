@@ -1,3 +1,5 @@
+composer global require "laravel/installer"
+laravel new livewire_project --jet
 
 
 Livewire:
