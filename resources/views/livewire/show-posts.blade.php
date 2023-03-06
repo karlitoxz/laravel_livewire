@@ -12,6 +12,9 @@
                 <input type="text" name="search" id="" wire:model='search'>
                 {{$search}} - 
                 {{$click}} - 
+                <div class="px-6 py-3">
+                    @livewire('create-post')
+                </div>
             </div>
 
             @if ($posts->count())

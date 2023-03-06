@@ -1,3 +1,17 @@
 <div>
-    {{-- Knowing others is intelligence; knowing yourself is true wisdom. --}}
+    <x-jet-danger-button wire:click="$set('open', true)">
+        Crear nuevo post
+    </x-jet-danger-button>
+
+    <x-jet-dialog-modal wire:model='open'>
+            <x-slot name="title">
+            </x-slot>
+
+            <x-slot name="content">
+            </x-slot>
+
+            <x-slot name="footer">
+            </x-slot>
+
+    </x-jet-dialog-modal>
 </div>
