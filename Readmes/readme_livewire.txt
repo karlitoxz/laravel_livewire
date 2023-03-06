@@ -24,3 +24,7 @@ Livewire:
 Crear componente livewire:
     php artisan make:livewire ShowPosts
     el componente queda en app->Http->Livewiere
+
+Crear campos y datos falsos;
+    php artisan migrate:fresh --seed
+
