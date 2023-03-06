@@ -22,4 +22,5 @@ Livewire:
        <script src="{{ asset('js/app.js') }}" defer></script>
 
 Crear componente livewire:
-    
+    php artisan make:livewire ShowPosts
+    el componente queda en app->Http->Livewiere
