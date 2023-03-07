@@ -10,6 +10,7 @@ class ShowPosts extends Component
 
     public $search = '';
     public $click = '';
+    protected $listeners = ['render' => 'render'];
 
     public function render()
     {

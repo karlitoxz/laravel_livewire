@@ -22,6 +22,8 @@ class CreatePost extends Component
             'content' => $this->content
         ]);
         $this->open = false;
+        $this->reset(['title', 'content']);
+        $this->emit('render');
         //https://www.youtube.com/watch?v=Wcf4pbnt5lI&list=PLZ2ovOgdI-kWqCet33O0WezN14KShkwER&index=7
     }
 }
